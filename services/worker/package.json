@@ -1,0 +1,12 @@
+{
+  "name": "@canteen/worker",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Outbox relay, triage worker, daily summary job",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}

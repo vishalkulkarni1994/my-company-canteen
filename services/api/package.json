@@ -1,0 +1,12 @@
+{
+  "name": "@canteen/api",
+  "private": true,
+  "version": "0.0.0",
+  "description": "GraphQL API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}
