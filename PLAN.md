@@ -59,7 +59,8 @@ Follows the build order in [DESIGN.md](DESIGN.md) section 12, with concrete task
 - Record the feedback received and the changes made.
 - Decide the open questions in DESIGN.md section 13 first, before the pilot: time zone, slot length, uncollected orders, single sign-on, LLM provider and cost ceiling.
 
-## Decisions to make before Phase 1
-- Which hosting to use for MongoDB (Atlas or Cosmos DB for MongoDB) and for the broker (self-run RabbitMQ or Azure Service Bus).
-- Local accounts or single sign-on.
-- Which LLM provider to use.
+## Decisions made before Phase 1
+- **MongoDB:** run locally as a replica set in Docker, and inspect it with MongoDB Compass. Hosted options (Atlas, Cosmos DB for MongoDB) are deferred to Phase 6.
+- **Broker:** RabbitMQ in Docker for now (assumed; Azure Service Bus stays an option for Phase 6).
+- **Accounts:** local accounts for now. Username and hashed password are stored in MongoDB; single sign-on can replace this later.
+- **LLM provider:** Claude, behind the swappable interface from Phase 4.
