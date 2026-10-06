@@ -1,0 +1,6 @@
+{
+  "name": "@canteen/web",
+  "private": true,
+  "version": "0.0.0",
+  "description": "React + TypeScript app"
+}
